@@ -8,10 +8,10 @@
 	"links": [
 		{
 			"title": "Git",
-			"url": "https://git-scm.com/",
+			"url": "https://git.fascinated.cc/",
 			"color": {
 				"normal": "bg-neutral-700",
-				"hover": "bg-neutral-100"
+				"hover": "bg-neutral-600"
 			}
 		},
 		{
