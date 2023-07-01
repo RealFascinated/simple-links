@@ -17,7 +17,9 @@ export default function Home() {
 										key={index}
 										className={`mt-4 px-4 w-60 py-2 rounded ${link.color.normal} hover:${link.color.hover}`}
 									>
-										<a href={link.url}>{link.title}</a>
+										<a href={link.url} target="_blank">
+											{link.title}
+										</a>
 									</button>
 								</>
 							);
