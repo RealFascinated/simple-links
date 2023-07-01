@@ -3,6 +3,10 @@ version: "3.4"
 services:
   next-app:
     build: https://git.fascinated.cc/Fascinated/personal-website.git
+    # Use this if you want to build the image locally
+    # build: .
+    # image: fascinated/personal-website
+    restart: always
     environment:
       NODE_ENV: production
     ports:
