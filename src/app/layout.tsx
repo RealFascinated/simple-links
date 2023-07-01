@@ -4,9 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "Example Site",
-	description:
-		"Template by https://git.fascinated.cc/Fascinated/nextjs-13-template-with-tailwindcss",
+	title: "fascinated.cc",
+	description: "I'm a 20-year-old software engineer from the UK",
 };
 
 export default function RootLayout({
