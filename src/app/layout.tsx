@@ -1,12 +1,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import Config from "../../config.json";
+
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-	title: "fascinated.cc",
-	description: "I'm a 20-year-old software engineer from the UK",
-};
+export const metadata = Config.metadata;
 
 export default function RootLayout({
 	children,

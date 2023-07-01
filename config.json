@@ -1,0 +1,42 @@
+{
+	"name": "Lee",
+	"description": "I'm a 20-year-old software engineer from the UK, and my true passion lies in creating and exploring the endless possibilities within my homelab.",
+	"metadata": {
+		"title": "fascinated.cc",
+		"description": "I'm a 20-year-old software engineer from the UK"
+	},
+	"links": [
+		{
+			"title": "Git",
+			"url": "https://git-scm.com/",
+			"color": {
+				"normal": "bg-neutral-700",
+				"hover": "bg-neutral-100"
+			}
+		},
+		{
+			"title": "Discord",
+			"url": "https://discord.gg/yjj2U3ctEG",
+			"color": {
+				"normal": "bg-neutral-700",
+				"hover": "bg-neutral-600"
+			}
+		},
+		{
+			"title": "Twitch",
+			"url": "https://twitch.tv/fascinated_",
+			"color": {
+				"normal": "bg-neutral-700",
+				"hover": "bg-neutral-600"
+			}
+		},
+		{
+			"title": "Documentation",
+			"url": "https://docs.fascinated.cc",
+			"color": {
+				"normal": "bg-neutral-700",
+				"hover": "bg-neutral-600"
+			}
+		}
+	]
+}
