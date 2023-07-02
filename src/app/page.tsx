@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Config from "../../config.json";
+import Config from "../../config/config.json";
 
 export default function Home() {
 	return (
