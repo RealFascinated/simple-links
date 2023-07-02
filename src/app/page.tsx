@@ -13,7 +13,8 @@ export default function Home() {
 						? {
 								zIndex: 0,
 								background: Config.background.darken.enabled
-									? `linear-gradient(rgba(0, 0, 0, ${Config.background.darken.amount}), rgba(0, 0, 0, ${Config.background.darken.amount})), url(${Config.background.backgroundImage})`
+									? `linear-gradient(rgba(0, 0, 0, ${Config.background.darken.amount}), rgba(0, 0, 0, ${Config.background.darken.amount})),
+                    url(${Config.background.backgroundImage})`
 									: `url(${Config.background.backgroundImage})`,
 								backgroundSize: "cover",
 								backgroundBlendMode: "multiply",
