@@ -22,7 +22,7 @@ export default function Home() {
 				}
 			></div>
 			<div
-				className="bg-neutral-800 rounded text-center shadow-lg"
+				className="bg-neutral-800 rounded-lg text-center shadow-lg"
 				style={{
 					zIndex: 1,
 				}}
