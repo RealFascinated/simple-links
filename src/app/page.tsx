@@ -40,14 +40,16 @@ export default function Home() {
 						})}
 					</div>
 
-					<h1 className="mt-5 text-blue-300">
-						<a
-							href="https://git.fascinated.cc/Fascinated/personal-website"
-							target="_blank"
-						>
-							View the website source here
-						</a>
-					</h1>
+					{Config.options.showSourceLink && (
+						<h1 className="mt-5 text-blue-300">
+							<a
+								href="https://git.fascinated.cc/Fascinated/simple-links"
+								target="_blank"
+							>
+								View the website source here
+							</a>
+						</h1>
+					)}
 				</div>
 			</div>
 		</main>
