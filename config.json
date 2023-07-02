@@ -11,12 +11,12 @@
 		},
 		"backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg"
 	},
+	"options": {
+		"showSourceLink": true
+	},
 	"metadata": {
 		"title": "Your Name",
 		"description": "website description"
-	},
-	"options": {
-		"showSourceLink": true
 	},
 	"links": [
 		{
