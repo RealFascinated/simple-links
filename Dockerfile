@@ -8,6 +8,9 @@ EXPOSE 3000
 RUN chown -R node /usr/src/app
 USER node
 
+# Opt out of NextJS telemetry
+RUN npx next telemetry disable
+
 # Build the app
 RUN npm run build
 
