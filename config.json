@@ -11,6 +11,9 @@
 		},
 		"backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg"
 	},
+	"infoCard": {
+		"transparency": 0.85
+	},
 	"options": {
 		"showSourceLink": true
 	},

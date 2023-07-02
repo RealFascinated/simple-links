@@ -23,9 +23,10 @@ export default function Home() {
 				}
 			></div>
 			<div
-				className="bg-neutral-800 rounded-lg text-center shadow-lg"
+				className={`bg-neutral-800 rounded-lg text-center shadow-lg`}
 				style={{
 					zIndex: 1,
+					opacity: Config.infoCard.transparency,
 				}}
 			>
 				<div className="m-5">
