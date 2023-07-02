@@ -20,7 +20,13 @@
 	"metadata": {
 		"title": "Your Name",
 		"description": "website description",
-		"themeColor": "#6441a5"
+		"themeColor": "#6441a5",
+		"authors": [
+			{
+				"name": "Fascinated",
+				"url": "https://fascinated.cc"
+			}
+		]
 	},
 	"links": [
 		{
