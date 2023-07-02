@@ -15,4 +15,4 @@ Visit the [wiki](https://git.fascinated.cc/Fascinated/simple-links/wiki/Installa
 
 ## Todo
 
-- [ ] Figure out how to get the config in the build step less hacky
+- [ ] Figure out how to get the config in the build step less hacky. Currently it just builds the server on boot to get around it not being the user provided config, which is not ideal.
