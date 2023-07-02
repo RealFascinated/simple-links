@@ -23,16 +23,19 @@ export default function Home() {
 					<div className="flex flex-col items-center">
 						{Config.links.map((link, index) => {
 							return (
-								<>
-									<button
+								<a
+									key={index}
+									href={link.url}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<div
 										key={index}
 										className={`mt-4 px-4 w-60 py-2 rounded ${link.color.normal} hover:${link.color.hover}`}
 									>
-										<a href={link.url} target="_blank">
-											{link.title}
-										</a>
-									</button>
-								</>
+										{link.title}
+									</div>
+								</a>
 							);
 						})}
 					</div>
