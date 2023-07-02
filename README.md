@@ -9,6 +9,10 @@ Simple Links is a lightweight alternative to Linktree and others.
 - Customizable
 - Open source
 
+## Preview
+
+![Preview](/media/preview.png)
+
 ## Installation
 
 Visit the [wiki](https://git.fascinated.cc/Fascinated/simple-links/wiki/Installation) page for installation instructions.
