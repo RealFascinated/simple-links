@@ -20,7 +20,7 @@
 	"metadata": {
 		"title": "Your Name",
 		"description": "website description",
-		"color": "#6441a5"
+		"themeColor": "#6441a5"
 	},
 	"links": [
 		{
