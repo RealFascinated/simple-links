@@ -4,7 +4,29 @@ import Config from "../../config.json";
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center justify-center w-screen h-screen bg-neutral-900 text-white">
-			<div className="bg-neutral-800 rounded text-center">
+			<div
+				className={`absolute inset-0 filter ${
+					Config.background.blur && "blur-sm"
+				} w-screen h-screen`}
+				style={
+					Config.background.showBackground
+						? {
+								zIndex: 0,
+								background: Config.background.darken.enabled
+									? `linear-gradient(rgba(0, 0, 0, ${Config.background.darken.amount}), rgba(0, 0, 0, ${Config.background.darken.amount})), url(${Config.background.backgroundImage})`
+									: `url(${Config.background.backgroundImage})`,
+								backgroundSize: "cover",
+								backgroundBlendMode: "multiply",
+						  }
+						: {}
+				}
+			></div>
+			<div
+				className="bg-neutral-800 rounded text-center shadow-lg"
+				style={{
+					zIndex: 1,
+				}}
+			>
 				<div className="m-5">
 					<div className="flex flex-col items-center justify-center">
 						<Image

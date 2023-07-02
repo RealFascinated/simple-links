@@ -2,6 +2,15 @@
 	"name": "Your Name",
 	"description": "A description about yourself",
 	"avatar": "https://cdn.fascinated.cc/KWprz2.jpg",
+	"background": {
+		"showBackground": true,
+		"blur": true,
+		"darken": {
+			"enabled": true,
+			"amount": 0.7
+		},
+		"backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg"
+	},
 	"metadata": {
 		"title": "Your Name",
 		"description": "website description"
