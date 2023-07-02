@@ -2,6 +2,8 @@ import Image from "next/image";
 import Config from "../../config.json";
 
 export default function Home() {
+	console.log(Config);
+
 	return (
 		<main className="flex flex-col items-center justify-center w-screen h-screen bg-neutral-900 text-white">
 			<div className="bg-neutral-800 rounded text-center">
