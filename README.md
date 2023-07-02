@@ -12,3 +12,7 @@ Simple Links is a lightweight alternative to Linktree and others.
 ## Installation
 
 Visit the [wiki](https://git.fascinated.cc/Fascinated/simple-links/wiki/Installation) page for installation instructions.
+
+## Todo
+
+- [ ] Figure out how to get the config in the build step less hacky
