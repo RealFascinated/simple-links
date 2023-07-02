@@ -1,7 +1,7 @@
 version: "3.4"
 
 services:
-  next-app:
+  simple-links:
     build: https://git.fascinated.cc/Fascinated/simple-links.git
     # Use this below if you want to build the image locally (you need to clone the repo first)
     # build: .
