@@ -9,7 +9,7 @@
 	"links": [
 		{
 			"title": "Git",
-			"url": "https://git.fascinated.cc/",
+			"url": "https://git.fascinated.cc",
 			"color": {
 				"normal": "bg-green-700",
 				"hover": "bg-green-600"
