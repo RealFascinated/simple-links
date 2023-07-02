@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Config from "../../config.json";
 
 export default function Home() {
@@ -5,7 +6,17 @@ export default function Home() {
 		<main className="flex flex-col items-center justify-center w-screen h-screen bg-neutral-900 text-white">
 			<div className="bg-neutral-800 rounded text-center">
 				<div className="m-5">
-					<h1 className="text-4xl font-bold">{Config.name}</h1>
+					<div className="flex flex-col items-center justify-center">
+						<Image
+							src={Config.avatar}
+							alt="Avatar"
+							width={120}
+							height={120}
+							className="rounded-full"
+						/>
+						<div className="mb-3"></div>
+						<h1 className="text-4xl font-bold">{Config.name}</h1>
+					</div>
 
 					<p className="mt-4 text-lg max-w-lg">{Config.description}</p>
 
