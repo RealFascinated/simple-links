@@ -2,10 +2,12 @@ version: "3.4"
 
 services:
   simple-links:
-    build: https://git.fascinated.cc/Fascinated/simple-links.git
-    # Use this below if you want to build the image locally (you need to clone the repo first)
-    # build: .
-    # image: fascinated/simple-links
+    image: fascinated/simple-links:latest
+    # Uncomment the following line to build the image yourself
+    # build: https://git.fascinated.cc/Fascinated/simple-links.git
+    # or build it locally (you need to clone the repo first):
+    # build:
+    #   context: .
     restart: always
     environment:
       NODE_ENV: production
