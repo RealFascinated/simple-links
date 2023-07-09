@@ -75,7 +75,7 @@ Simple Links is a lightweight alternative to Linktree and others.
 			"url": "https://git.fascinated.cc", // Where the button goes to when clicked
 			"icon": "fab fa-github", // The icon of the button (can be removed to show no icon)
 			"color": {
-				// The color of the icon
+				// The color of the icon (tailwindcss colors)
 				"normal": "bg-green-700"
 			}
 		},
