@@ -28,6 +28,13 @@
 			}
 		]
 	},
+	"analytics": {
+		"plausable": {
+			"enabled": true,
+			"siteDomain": "example.com",
+			"domain": "analyics.example.com"
+		}
+	},
 	"links": [
 		{
 			"title": "Git",
