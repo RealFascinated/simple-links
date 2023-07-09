@@ -1,5 +1,12 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Config from "../../config.json";
+
+library.add(fab, far, fas);
 
 export default function Home() {
 	return (
@@ -46,6 +53,8 @@ export default function Home() {
 
 					<div className="flex flex-col items-center">
 						{Config.links.map((link, index) => {
+							const icons: any = link.icon?.split(" ");
+
 							return (
 								<a
 									key={index}
@@ -55,9 +64,15 @@ export default function Home() {
 								>
 									<div
 										key={index}
-										className={`mt-4 px-4 w-60 py-2 rounded ${link.color.normal} hover:${link.color.hover}`}
+										className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded ${link.color.normal} hover:brightness-75 transition`}
 									>
-										{link.title}
+										{link.icon && (
+											<>
+												<FontAwesomeIcon icon={icons} />
+												<div className="ml-2"></div>
+											</>
+										)}
+										<p>{link.title}</p>
 									</div>
 								</a>
 							);
