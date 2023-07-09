@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Config from "../../config.json";
 
-library.add(fab, far, fas);
+library.add(fab, far, fas); // Loading in the icons from FontAwesome
 
 export default function Home() {
 	const { background, infoCard, avatar, name, links, options, description } =
-		Config;
+		Config; // All of the settings pulled from the config file
 
 	return (
 		<>
