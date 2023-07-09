@@ -25,8 +25,8 @@ export default function Home() {
 		<>
 			{analytics.plausable.enabled && (
 				<PlausibleProvider
-					domain={analytics.plausable.siteDomain}
-					customDomain={analytics.plausable.domain}
+					domain={analytics.plausable.domain}
+					customDomain={analytics.plausable.siteDomain}
 					selfHosted={true}
 				/>
 			)}
