@@ -3,33 +3,17 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PlausibleProvider from "next-plausible";
 import Image from "next/image";
 import Config from "../../config.json";
 
 library.add(fab, far, fas);
 
 export default function Home() {
-	const {
-		background,
-		infoCard,
-		avatar,
-		name,
-		links,
-		options,
-		description,
-		analytics,
-	} = Config;
+	const { background, infoCard, avatar, name, links, options, description } =
+		Config;
 
 	return (
 		<>
-			{analytics.plausable.enabled && (
-				<PlausibleProvider
-					domain={analytics.plausable.domain}
-					customDomain={analytics.plausable.siteDomain}
-					selfHosted={true}
-				/>
-			)}
 			<main className="flex flex-col items-center justify-center w-screen h-screen bg-neutral-900 text-white">
 				<div
 					className={`absolute inset-0 filter ${
