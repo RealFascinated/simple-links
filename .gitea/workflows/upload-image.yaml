@@ -10,6 +10,7 @@ on:
       - "sharex.sxcu"
       - "LICENSE"
       - "docker-compose.yml"
+      - "media/*"
 
 jobs:
   docker:
