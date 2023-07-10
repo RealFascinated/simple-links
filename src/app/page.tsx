@@ -44,9 +44,9 @@ export default function Home() {
 				className={`flex flex-col items-center justify-center w-screen h-screen bg-neutral-900 ${selectedTheme.textColor}`}
 			>
 				<div
-					className={`absolute inset-0 filter ${
+					className={`absolute inset-0 filter w-screen h-screen ${
 						background.blur && "blur-sm"
-					} w-screen h-screen`}
+					}`}
 					style={
 						background.showBackground
 							? {
@@ -85,7 +85,7 @@ export default function Home() {
 
 						<div className="flex flex-col items-center">
 							{links.map((link, index) => {
-								const icons: any = link.icon?.split(" ");
+								const icons: any = link.icon?.split(" ") ?? [];
 
 								return (
 									<a
@@ -93,19 +93,16 @@ export default function Home() {
 										href={link.url}
 										target="_blank"
 										rel="noopener noreferrer"
+										className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded
+                      text-white ${link.color.normal} hover:brightness-75 transition`}
 									>
-										<div
-											key={index}
-											className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded text-white ${link.color.normal} hover:brightness-75 transition`}
-										>
-											{link.icon && (
-												<>
-													<FontAwesomeIcon icon={icons} />
-													<div className="ml-2"></div>
-												</>
-											)}
-											<p>{link.title}</p>
-										</div>
+										{link.icon && (
+											<>
+												<FontAwesomeIcon icon={icons} />
+												<div className="ml-2"></div>
+											</>
+										)}
+										<p>{link.title}</p>
 									</a>
 								);
 							})}
