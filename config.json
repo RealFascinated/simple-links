@@ -2,7 +2,7 @@
   "configVersion": "0.1.2",
   "name": "Your Name",
   "description": "A description about yourself",
-  "avatar": "https://cdn.fascinated.cc/KWprz2.jpg",
+  "avatar": "/avatar.png",
   "background": {
     "showBackground": true,
     "blur": true,
@@ -10,7 +10,7 @@
       "enabled": true,
       "amount": 0.7
     },
-    "backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg"
+    "backgroundImage": "/background.jpg"
   },
   "theme": "dark",
   "infoCard": {

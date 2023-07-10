@@ -36,6 +36,8 @@ Simple Links is a lightweight alternative to Linktree and others.
   "name": "Your Name", // The name you want to display on the site
   "description": "A description about yourself", // The description you want to use
   "avatar": "https://cdn.fascinated.cc/KWprz2.jpg", // The avatar that is shown at the top of the site
+  // or use a local image
+  "avatar": "/avatar.png",
   "background": {
     // If you want to use a custom (not dark) background
     "showBackground": true, // Whether it is enabled or not
@@ -45,7 +47,9 @@ Simple Links is a lightweight alternative to Linktree and others.
       "enabled": true,
       "amount": 0.7
     },
-    "backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg" // The image to use in the background
+    "backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg", // The image to use in the background
+    // or use a local image
+    "backgroundImage": "/background.jpg"
   },
   "theme": "dark", // "dark" or "light" themes
   "infoCard": {
