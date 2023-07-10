@@ -112,14 +112,13 @@ export default function Home() {
 
 				<div className="absolute bottom-0 right-0 mb-5 mr-5">
 					{options.showSourceLink && (
-						<h1 className="mt-5 text-blue-300">
-							<a
-								href="https://git.fascinated.cc/Fascinated/simple-links"
-								target="_blank"
-							>
-								Website Source
-							</a>
-						</h1>
+						<a
+							href="https://git.fascinated.cc/Fascinated/simple-links"
+							target="_blank"
+							className="mt-5 text-blue-300"
+						>
+							Website Source
+						</a>
 					)}
 				</div>
 			</main>
