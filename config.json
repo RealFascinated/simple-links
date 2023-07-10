@@ -1,58 +1,58 @@
 {
-	"configVersion": "0.1.2",
-	"name": "Your Name",
-	"description": "A description about yourself",
-	"avatar": "https://cdn.fascinated.cc/KWprz2.jpg",
-	"background": {
-		"showBackground": true,
-		"blur": true,
-		"darken": {
-			"enabled": true,
-			"amount": 0.7
-		},
-		"backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg"
-	},
-	"theme": "dark",
-	"infoCard": {
-		"transparency": 0.85
-	},
-	"options": {
-		"showSourceLink": true
-	},
-	"metadata": {
-		"title": "Your Name",
-		"description": "website description",
-		"themeColor": "#6441a5",
-		"authors": [
-			{
-				"name": "Fascinated",
-				"url": "https://fascinated.cc"
-			}
-		]
-	},
-	"links": [
-		{
-			"title": "Git",
-			"url": "https://git.fascinated.cc",
-			"icon": "fab fa-github",
-			"color": {
-				"normal": "bg-green-700"
-			}
-		},
-		{
-			"title": "Twitch",
-			"url": "https://twitch.tv/fascinated_",
-			"icon": "fab fa-twitch",
-			"color": {
-				"normal": "bg-[#6441a5]"
-			}
-		},
-		{
-			"title": "Documentation",
-			"url": "https://docs.fascinated.cc",
-			"color": {
-				"normal": "bg-neutral-700"
-			}
-		}
-	]
+  "configVersion": "0.1.2",
+  "name": "Your Name",
+  "description": "A description about yourself",
+  "avatar": "https://cdn.fascinated.cc/KWprz2.jpg",
+  "background": {
+    "showBackground": true,
+    "blur": true,
+    "darken": {
+      "enabled": true,
+      "amount": 0.7
+    },
+    "backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg"
+  },
+  "theme": "dark",
+  "infoCard": {
+    "transparency": 0.85
+  },
+  "options": {
+    "showSourceLink": true
+  },
+  "metadata": {
+    "title": "Your Name",
+    "description": "website description",
+    "themeColor": "#6441a5",
+    "authors": [
+      {
+        "name": "Fascinated",
+        "url": "https://fascinated.cc"
+      }
+    ]
+  },
+  "links": [
+    {
+      "title": "Git",
+      "url": "https://git.fascinated.cc",
+      "icon": "fab fa-github",
+      "color": {
+        "normal": "bg-green-700"
+      }
+    },
+    {
+      "title": "Twitch",
+      "url": "https://twitch.tv/fascinated_",
+      "icon": "fab fa-twitch",
+      "color": {
+        "normal": "bg-[#6441a5]"
+      }
+    },
+    {
+      "title": "Documentation",
+      "url": "https://docs.fascinated.cc",
+      "color": {
+        "normal": "bg-neutral-700"
+      }
+    }
+  ]
 }
