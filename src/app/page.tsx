@@ -18,7 +18,7 @@ export default function Home() {
 		options,
 		description,
 		theme = "dark", // Fallback to dark if no theme was found
-	} = Config; // All of the settings pulled from the config file
+	}: any = Config; // All of the settings pulled from the config file
 
 	// Theme colors to use when using the selected theme
 	// all used colors are from TailwindCSS
