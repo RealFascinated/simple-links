@@ -97,3 +97,13 @@ Simple Links is a lightweight alternative to Linktree and others.
 	]
 }
 ```
+
+## Help!!! I'm getting an error when launching it
+
+### Config Issue
+
+If your error looks similar to this you are most likely missing part of the config, as some new things may have been added.
+
+```bash
+simple-links | Type error: Property 'theme' does not exist on type '{ name: string; description: string; avatar: string; background: { showBackground: boolean; blur: boolean; darken: { enabled: boolean; amount: number; }; backgroundImage: string; }; infoCard: { transparency: number; }; metadata: { ...; }; options: { ...; }; analytics: { ...; }; links: { ...; }[]; }'.
+```
