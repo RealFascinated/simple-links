@@ -21,19 +21,23 @@ export default function Home() {
 	} = Config; // All of the settings pulled from the config file
 
 	// Theme colors to use when using the selected theme
+	// all used colors are from TailwindCSS
 	const themeColors: {
 		[key: string]: {
 			background: string;
 			textColor: string;
+			buttonTextColor: string;
 		};
 	} = {
 		dark: {
 			background: "bg-neutral-900",
 			textColor: "text-white",
+			buttonTextColor: "text-white",
 		},
 		light: {
 			background: "bg-white",
 			textColor: "text-black",
+			buttonTextColor: "text-white",
 		},
 	};
 	const selectedTheme = themeColors[theme]; // The theme to use
@@ -94,7 +98,7 @@ export default function Home() {
 										target="_blank"
 										rel="noopener noreferrer"
 										className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded
-                      text-white ${link.color.normal} hover:brightness-75 transition`}
+                      ${selectedTheme.buttonTextColor} ${link.color.normal} hover:brightness-75 transition`}
 									>
 										{link.icon && (
 											<>
