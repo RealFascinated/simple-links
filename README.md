@@ -47,6 +47,7 @@ Simple Links is a lightweight alternative to Linktree and others.
 		},
 		"backgroundImage": "https://cdn.fascinated.cc/8twdW8.jpg" // The image to use in the background
 	},
+	"theme": "dark", // "dark" or "light" themes
 	"infoCard": {
 		// The card that displays your info and buttons
 		"transparency": 0.85 // How transparent should it be?
