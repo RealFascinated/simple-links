@@ -40,7 +40,7 @@ export default function Home() {
       buttonTextColor: "text-white",
     },
   };
-  const selectedTheme = themeColors[theme]; // The theme to use
+  const selectedTheme = themeColors[theme] || themeColors.dark; // The theme to use (fallback of dark)
 
   return (
     <>
