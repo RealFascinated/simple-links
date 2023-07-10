@@ -2,7 +2,7 @@
   "configVersion": "0.1.2",
   "name": "Your Name",
   "description": "A description about yourself",
-  "avatar": "/avatar.png",
+  "avatar": "/avatar.webp",
   "background": {
     "showBackground": true,
     "blur": true,

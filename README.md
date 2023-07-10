@@ -37,7 +37,7 @@ Simple Links is a lightweight alternative to Linktree and others.
   "description": "A description about yourself", // The description you want to use
   "avatar": "https://cdn.fascinated.cc/KWprz2.jpg", // The avatar that is shown at the top of the site
   // or use a local image
-  "avatar": "/avatar.png",
+  "avatar": "/avatar.webp",
   "background": {
     // If you want to use a custom (not dark) background
     "showBackground": true, // Whether it is enabled or not
