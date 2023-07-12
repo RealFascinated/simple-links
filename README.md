@@ -117,12 +117,18 @@ simple-links | Type error: Property 'theme' does not exist on type '{ name: stri
   // Icon only links
   "socialLinks": [
     {
-      "icon": "fab fa-github", // The icon to show
-      "url": "https://git.fascinated.cc" // Where the link goes to
+      "icon": "fab fa-twitter", // The icon to use
+      "color": "#1DA1F2", // An optional color
+      "url": "https://twitter.com" // The link to go to
     },
     {
       "icon": "fab fa-reddit",
+      "color": "#FF4300",
       "url": "https://www.reddit.com/user/ImFascinatedMC"
+    },
+    {
+      "icon": "fab fa-git-alt",
+      "url": "https://git.fascinated.cc"
     }
   ]
 }

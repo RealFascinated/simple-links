@@ -57,12 +57,18 @@
   ],
   "socialLinks": [
     {
-      "icon": "fab fa-github",
-      "url": "https://git.fascinated.cc"
+      "icon": "fab fa-twitter",
+      "color": "#1DA1F2",
+      "url": "https://twitter.com"
     },
     {
       "icon": "fab fa-reddit",
+      "color": "#FF4300",
       "url": "https://www.reddit.com/user/ImFascinatedMC"
+    },
+    {
+      "icon": "fab fa-git-alt",
+      "url": "https://git.fascinated.cc"
     }
   ]
 }

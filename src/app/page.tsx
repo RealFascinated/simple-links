@@ -123,9 +123,15 @@ export default function Home() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`hover:brightness-75 transition`}
+                      className="hover:brightness-75 transition"
                     >
-                      {link.icon && <FontAwesomeIcon size="2xl" icon={icons} />}
+                      {link.icon && (
+                        <FontAwesomeIcon
+                          color={link.color && link.color}
+                          size="2xl"
+                          icon={icons}
+                        />
+                      )}
                     </a>
                   );
                 })}
