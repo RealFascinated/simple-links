@@ -3,6 +3,9 @@ FROM node:lts-slim
 ENV NODE_ENV=production
 WORKDIR /usr/src/app
 
+RUN apt update
+RUN DEBIAN_FRONTEND=noninteractive apt install wget -y
+
 # Copy package.json and package-lock.json separately to fully utilize Docker layer caching
 COPY package.json ./
 COPY package-lock.json ./
@@ -24,4 +27,4 @@ ENV NODE_ENV=production
 EXPOSE 3000
 
 # Start the app
-CMD ["npm", "start"]
+CMD ["bash", "start.sh"]
