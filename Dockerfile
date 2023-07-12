@@ -9,14 +9,14 @@ COPY package.json ./
 COPY package-lock.json ./
 RUN npm ci --production --silent && npm cache clean --force
 
-# Copy the rest of the files
-COPY . .
+# Copy only necessary files for production
+COPY .next ./.next
+COPY public ./public
+COPY config.json ./
+COPY next.config.js ./
 
 # Opt out of Next.js telemetry
 RUN npx next telemetry disable
-
-# Build the app
-#RUN npm run build
 
 # Expose port 3000
 EXPOSE 3000
