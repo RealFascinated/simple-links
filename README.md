@@ -33,6 +33,10 @@ Simple Links is a lightweight alternative to Linktree and others.
 
 Just simply remove it from the config and it will not show anymore
 
+## Showing Discord status
+
+You must be in the [lanyard server](https://discord.gg/UrXF2cfJ7F) for it to work.
+
 ## Help!!! I'm getting an error when launching it
 
 ### Config Issue
@@ -73,6 +77,11 @@ simple-links | Type error: Property 'theme' does not exist on type '{ name: stri
   // Website options
   "options": {
     "showSourceLink": true // Should we show the "Source Code" link
+  },
+  // Show your discord status on the site (You MUST be in the Lanyard server)
+  // https://discord.gg/UrXF2cfJ7F
+  "discord": {
+    "id": "474221560031608833" // Your discord ID
   },
   // Search engine and embedding metadata (discord, twitter, etc embeds)
   "metadata": {

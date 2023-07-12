@@ -5,6 +5,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Config from "../../config.json";
+import Avatar from "./components/Avatar";
 
 library.add(fab, far, fas); // Loading in the icons from FontAwesome
 
@@ -77,13 +78,7 @@ export default function Home() {
         >
           <div className="m-5">
             <div className="flex flex-col items-center justify-center">
-              <Image
-                src={avatar}
-                alt="Avatar"
-                width={120}
-                height={120}
-                className="rounded-full"
-              />
+              <Avatar avatar={avatar} />
               <div className="mb-3"></div>
               <h1 className="text-4xl font-bold">{name}</h1>
             </div>
