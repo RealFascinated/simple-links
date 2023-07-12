@@ -21,5 +21,6 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 **/media
+**/.gitea
 LICENSE
 README.md
