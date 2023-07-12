@@ -25,18 +25,18 @@ export default function Home() {
   // all used colors are from TailwindCSS
   const themeColors: {
     [key: string]: {
-      background: string;
+      backgroundColor: string;
       textColor: string;
       buttonTextColor: string;
     };
   } = {
     dark: {
-      background: "bg-neutral-900",
+      backgroundColor: "bg-neutral-900",
       textColor: "text-white",
       buttonTextColor: "text-white",
     },
     light: {
-      background: "bg-white",
+      backgroundColor: "bg-white",
       textColor: "text-black",
       buttonTextColor: "text-white",
     },
@@ -48,6 +48,7 @@ export default function Home() {
       <main
         className={`flex flex-col items-center justify-center w-screen h-screen bg-neutral-800 ${selectedTheme.textColor}`}
       >
+        {/* Background Image */}
         {background.showBackground && background.backgroundImage && (
           <Image
             alt="Background image"
@@ -62,7 +63,7 @@ export default function Home() {
           />
         )}
         <div
-          className={`${selectedTheme.background} rounded-lg text-center shadow-lg`}
+          className={`${selectedTheme.backgroundColor} rounded-lg text-center shadow-lg`}
           style={{
             zIndex: 1,
             opacity: infoCard.transparency,
