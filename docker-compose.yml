@@ -8,9 +8,8 @@ services:
     # or build it locally (you need to clone the repo first):
     # build:
     #   context: .
+    container_name: SimpleLinks
     restart: always
-    environment:
-      NODE_ENV: production
     ports:
       - 3000:3000
     volumes:

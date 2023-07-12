@@ -17,6 +17,9 @@ COPY . .
 # Remove development dependencies
 RUN npm prune --production
 
+# Environment Variables
+ENV NODE_ENV=production
+
 # Expose port 3000
 EXPOSE 3000
 
