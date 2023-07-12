@@ -8,6 +8,7 @@ if [ -z "$(ls -A $workDir/public)" ]; then
   echo "Some files are missing, downloading them"
   if [ ! -w "$workDir" ]; then
     echo "The directory \"$workDir\" is not writeable, unable to download files. Please check your docker compose for :ro and set it to :rw"
+  fi
   for item in "${toDownload[@]}"
   do
     dir=$workDir/public/$item
