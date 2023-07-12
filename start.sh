@@ -1,5 +1,7 @@
+echo "Checking if files need to be downloaded"
 if [ -z "$(ls -A /usr/src/app/public)" ]; then
     echo "Directory is empty"
 fi
 
-node start
+echo "Starting Simple Links..."
+npm start
