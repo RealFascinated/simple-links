@@ -1,4 +1,3 @@
-# Use a smaller base image
 FROM node:lts-slim
 
 ENV NODE_ENV=production
@@ -20,10 +19,6 @@ RUN npm prune --production
 
 # Expose port 3000
 EXPOSE 3000
-
-# Set permissions and user
-#RUN chown -R node /usr/src/app
-#USER node
 
 # Start the app
 CMD ["npm", "start"]
