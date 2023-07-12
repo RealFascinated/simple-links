@@ -3,6 +3,8 @@ FROM node:lts-slim
 ENV NODE_ENV=production
 WORKDIR /usr/src/app
 
+RUN apt install wget
+
 # Copy package.json and package-lock.json separately to fully utilize Docker layer caching
 COPY package.json ./
 COPY package-lock.json ./
