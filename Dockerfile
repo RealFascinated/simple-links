@@ -4,7 +4,7 @@ ENV NODE_ENV=production
 WORKDIR /usr/src/app
 
 RUN apt update
-RUN DEBIAN_FRONTEND=noninteractive apt install wget
+RUN DEBIAN_FRONTEND=noninteractive apt install wget -y
 
 # Copy package.json and package-lock.json separately to fully utilize Docker layer caching
 COPY package.json ./
