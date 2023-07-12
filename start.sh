@@ -7,6 +7,7 @@ echo "Checking if files need to be downloaded"
 if [ -z "$(ls -A $workDir/public)" ]; then
   echo "Some files are missing, downloading them"
   if [ ! -w "$workDir" ]; then
+    # TODO: fix this. it doesn't seem to be working?
     echo "The directory \"$workDir\" is not writeable, unable to download files. Please check your docker compose for :ro and set it to :rw"
   fi
   for item in "${toDownload[@]}"
