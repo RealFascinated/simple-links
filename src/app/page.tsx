@@ -91,23 +91,24 @@ export default function Home() {
 
             {/* Links (Buttons) */}
             <div className="flex flex-col items-center">
-              {links.map((link, index) => {
-                const icons: any = link.icon?.split(" ") ?? [];
+              {links &&
+                links.map((link, index) => {
+                  const icons: any = link.icon?.split(" ") ?? [];
 
-                return (
-                  <a
-                    key={index}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded
+                  return (
+                    <a
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded
                       ${selectedTheme.buttonTextColor} ${link.color.normal} hover:brightness-75 transition gap-2`}
-                  >
-                    {link.icon && <FontAwesomeIcon icon={icons} />}
-                    <p>{link.title}</p>
-                  </a>
-                );
-              })}
+                    >
+                      {link.icon && <FontAwesomeIcon icon={icons} />}
+                      <p>{link.title}</p>
+                    </a>
+                  );
+                })}
             </div>
 
             {/* Social Links */}
