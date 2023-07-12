@@ -1,5 +1,5 @@
 {
-  "configVersion": "0.1.2",
+  "configVersion": "0.1.3",
   "name": "Your Name",
   "description": "A description about yourself",
   "avatar": "/avatar.webp",
@@ -34,7 +34,7 @@
     {
       "title": "Git",
       "url": "https://git.fascinated.cc",
-      "icon": "fab fa-github",
+      "icon": "fab fa-git-alt",
       "color": {
         "normal": "bg-green-700"
       }
@@ -53,6 +53,16 @@
       "color": {
         "normal": "bg-neutral-700"
       }
+    }
+  ],
+  "socialLinks": [
+    {
+      "icon": "fab fa-github",
+      "url": "https://git.fascinated.cc"
+    },
+    {
+      "icon": "fab fa-reddit",
+      "url": "https://www.reddit.com/user/ImFascinatedMC"
     }
   ]
 }

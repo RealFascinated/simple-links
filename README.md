@@ -38,8 +38,8 @@ Simple Links is a lightweight alternative to Linktree and others.
   "avatar": "https://cdn.fascinated.cc/KWprz2.jpg", // The avatar that is shown at the top of the site
   // or use a local image
   "avatar": "/avatar.webp",
+  // If you want to use a custom (not dark) background
   "background": {
-    // If you want to use a custom (not dark) background
     "showBackground": true, // Whether it is enabled or not
     "blur": true, // Should we blur the background?
     "darken": {
@@ -52,16 +52,16 @@ Simple Links is a lightweight alternative to Linktree and others.
     "backgroundImage": "/background.jpg"
   },
   "theme": "dark", // "dark" or "light" themes
+  // The card that displays your info and buttons
   "infoCard": {
-    // The card that displays your info and buttons
     "transparency": 0.85 // How transparent should it be?
   },
+  // Website options
   "options": {
-    // Website options
     "showSourceLink": true // Should we show the "Source Code" link
   },
+  // Search engine and embedding metadata (discord, twitter, etc embeds)
   "metadata": {
-    // Search engine and embedding metadata (discord, twitter, etc embeds)
     "title": "Your Name", // The title of the embed
     "description": "website description", // The description of the embed
     "themeColor": "#6441a5", // The color of the embed
@@ -73,8 +73,8 @@ Simple Links is a lightweight alternative to Linktree and others.
       }
     ]
   },
+  // The buttons to show links for
   "links": [
-    // The buttons to show links for
     {
       "title": "Git", // The shown title of the button
       "url": "https://git.fascinated.cc", // Where the button goes to when clicked
@@ -98,6 +98,17 @@ Simple Links is a lightweight alternative to Linktree and others.
       "color": {
         "normal": "bg-neutral-700"
       }
+    }
+  ],
+  // Icon only links
+  "socialLinks": [
+    {
+      "icon": "fab fa-github", // The icon to show
+      "url": "https://git.fascinated.cc" // Where the link goes to
+    },
+    {
+      "icon": "fab fa-reddit",
+      "url": "https://www.reddit.com/user/ImFascinatedMC"
     }
   ]
 }
