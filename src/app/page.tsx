@@ -26,19 +26,25 @@ export default function Home() {
   const themeColors: {
     [key: string]: {
       backgroundColor: string;
+      infoCardColor: string;
       textColor: string;
       buttonTextColor: string;
+      footerTextColor: string;
     };
   } = {
     dark: {
-      backgroundColor: "bg-neutral-900",
+      backgroundColor: "bg-neutral-800",
+      infoCardColor: "bg-neutral-900",
       textColor: "text-white",
       buttonTextColor: "text-white",
+      footerTextColor: "text-blue-300",
     },
     light: {
-      backgroundColor: "bg-white",
+      backgroundColor: "bg-gray-300",
+      infoCardColor: "bg-white",
       textColor: "text-black",
       buttonTextColor: "text-white",
+      footerTextColor: "text-black",
     },
   };
   const selectedTheme = themeColors[theme] || themeColors.dark; // The theme to use (fallback of dark)
@@ -46,7 +52,7 @@ export default function Home() {
   return (
     <>
       <main
-        className={`flex flex-col items-center justify-center w-screen h-screen bg-neutral-800 ${selectedTheme.textColor}`}
+        className={`flex flex-col items-center justify-center w-screen h-screen ${selectedTheme.backgroundColor} ${selectedTheme.textColor}`}
       >
         {/* Background Image */}
         {background.showBackground && background.backgroundImage && (
@@ -63,7 +69,7 @@ export default function Home() {
           />
         )}
         <div
-          className={`${selectedTheme.backgroundColor} rounded-lg text-center shadow-lg`}
+          className={`${selectedTheme.infoCardColor} rounded-lg text-center shadow-lg`}
           style={{
             zIndex: 1,
             opacity: infoCard.transparency,
@@ -136,12 +142,14 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="absolute bottom-0 right-0 mb-5 mr-5">
+        <div
+          className={`absolute bottom-0 right-0 mb-5 mr-5 ${selectedTheme.footerTextColor}`}
+        >
           {options.showSourceLink && (
             <a
               href="https://git.fascinated.cc/Fascinated/simple-links"
               target="_blank"
-              className="mt-5 text-blue-300"
+              className="mt-5"
             >
               Website Source
             </a>
