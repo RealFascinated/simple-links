@@ -46,26 +46,21 @@ export default function Home() {
   return (
     <>
       <main
-        className={`flex flex-col items-center justify-center w-screen h-screen bg-neutral-900 ${selectedTheme.textColor}`}
+        className={`flex flex-col items-center justify-center w-screen h-screen bg-neutral-800 ${selectedTheme.textColor}`}
       >
-        <div
-          className={`absolute inset-0 filter w-screen h-screen ${
-            background.blur && "blur-sm"
-          }`}
-          style={
-            background.showBackground
-              ? {
-                  zIndex: 0,
-                  background: background.darken.enabled
-                    ? `linear-gradient(rgba(0, 0, 0, ${background.darken.amount}), rgba(0, 0, 0, ${background.darken.amount})),
-                    url(${background.backgroundImage})`
-                    : `url(${background.backgroundImage})`,
-                  backgroundSize: "cover",
-                  backgroundBlendMode: "multiply",
-                }
-              : {}
-          }
-        ></div>
+        {background.showBackground && background.backgroundImage && (
+          <Image
+            alt="Background image"
+            src={background.backgroundImage}
+            fill={true}
+            style={{
+              zIndex: 0,
+              filter: `${background.blur && "blur(4px)"} brightness(${
+                background.darken.enabled && background.darken.amount / 2
+              })`,
+            }}
+          />
+        )}
         <div
           className={`${selectedTheme.background} rounded-lg text-center shadow-lg`}
           style={{
