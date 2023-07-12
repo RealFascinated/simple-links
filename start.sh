@@ -11,7 +11,7 @@ if [ -z "$(ls -A $workDir/public)" ]; then
   for item in "${toDownload[@]}"
   do
     dir=$workDir/public/$item
-    if [ -e "$dir" ]; then
+    if [ ! -e "$dir" ]; then
       echo "Downloading $item to directory $dir"
       wget -P $dir $baseUrl$item
       echo "Done"
