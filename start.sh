@@ -14,7 +14,7 @@ if [ -z "$(ls -A $workDir/public)" ]; then
     dir=$workDir/public/$item
     if [ ! -e "$dir" ]; then
       echo "Downloading $item to directory $dir"
-      wget -Pq $dir $baseUrl$item
+      wget -q -P $dir $baseUrl$item
       echo "Done"
     fi
   done
