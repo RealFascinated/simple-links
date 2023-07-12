@@ -22,8 +22,8 @@ RUN npm prune --production
 EXPOSE 3000
 
 # Set permissions and user
-RUN chown -R node /usr/src/app
-USER node
+#RUN chown -R node /usr/src/app
+#USER node
 
 # Start the app
 CMD ["npm", "start"]
