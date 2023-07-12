@@ -96,8 +96,13 @@ export default function Home() {
               {links &&
                 links.map((link, index) => {
                   const icons: any = link.icon?.split(" ") ?? [];
-                  const legacyColor: any = link.color; // Here so old configs don't break
-                  const color = link.color || legacyColor.normal;
+                  let color: any = link.color;
+                  // Here so old configs don't break
+                  if (color.normal != undefined) {
+                    color = color.normal;
+                  } else {
+                    color = link.color;
+                  }
 
                   return (
                     <a

@@ -35,7 +35,9 @@
       "title": "Git",
       "url": "https://git.fascinated.cc",
       "icon": "fab fa-git-alt",
-      "color": "bg-green-700"
+      "color": {
+        "normal": "bg-green-700"
+      }
     },
     {
       "title": "Twitch",
