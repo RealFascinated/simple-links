@@ -96,6 +96,8 @@ export default function Home() {
               {links &&
                 links.map((link, index) => {
                   const icons: any = link.icon?.split(" ") ?? [];
+                  const legacyColor: any = link.color; // Here so old configs don't break
+                  const color = link.color || legacyColor.normal;
 
                   return (
                     <a
@@ -104,7 +106,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded
-                      ${selectedTheme.buttonTextColor} ${link.color.normal} hover:brightness-75 transition gap-2`}
+                      ${selectedTheme.buttonTextColor} ${color} hover:brightness-75 transition gap-2`}
                     >
                       {link.icon && <FontAwesomeIcon icon={icons} />}
                       <p>{link.title}</p>

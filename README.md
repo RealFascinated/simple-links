@@ -93,25 +93,19 @@ simple-links | Type error: Property 'theme' does not exist on type '{ name: stri
       "title": "Git", // The shown title of the button
       "url": "https://git.fascinated.cc", // Where the button goes to when clicked
       "icon": "fab fa-github", // The icon of the button (can be removed to show no icon)
-      "color": {
-        // The color of the icon (tailwindcss colors)
-        "normal": "bg-green-700"
-      }
+      // The color of the icon (tailwindcss colors)
+      "color": "bg-green-700"
     },
     {
       "title": "Twitch",
       "url": "https://twitch.tv/fascinated_",
       "icon": "fab fa-twitch",
-      "color": {
-        "normal": "bg-[#6441a5]"
-      }
+      "color": "bg-[#6441a5]"
     },
     {
       "title": "Documentation",
       "url": "https://docs.fascinated.cc",
-      "color": {
-        "normal": "bg-neutral-700"
-      }
+      "color": "bg-neutral-700"
     }
   ],
   // Icon only links

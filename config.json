@@ -35,24 +35,18 @@
       "title": "Git",
       "url": "https://git.fascinated.cc",
       "icon": "fab fa-git-alt",
-      "color": {
-        "normal": "bg-green-700"
-      }
+      "color": "bg-green-700"
     },
     {
       "title": "Twitch",
       "url": "https://twitch.tv/fascinated_",
       "icon": "fab fa-twitch",
-      "color": {
-        "normal": "bg-[#6441a5]"
-      }
+      "color": "bg-[#6441a5]"
     },
     {
       "title": "Documentation",
       "url": "https://docs.fascinated.cc",
-      "color": {
-        "normal": "bg-neutral-700"
-      }
+      "color": "bg-neutral-700"
     }
   ],
   "socialLinks": [
