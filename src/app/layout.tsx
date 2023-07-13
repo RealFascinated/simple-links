@@ -1,9 +1,10 @@
+import { Config } from "@/src/types/config";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Config from "../../config.yml";
+const Config: Config = require("../../config.yml") as any;
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });

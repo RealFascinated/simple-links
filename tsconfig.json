@@ -21,11 +21,13 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "types": ["node"]
   },
   "include": [
     "next-env.d.ts",
-    "src/types/*.d.ts",
+    "src/types/**/*.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"

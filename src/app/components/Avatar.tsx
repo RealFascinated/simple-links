@@ -1,10 +1,11 @@
 "use client";
 
+import { Config } from "@/src/types/config";
 import Image from "next/image";
 import { Fragment } from "react";
 import { useLanyardWS } from "use-lanyard";
 
-import Config from "../../../config.yml";
+const Config: Config = require("../../../config.yml") as any;
 
 function LanyardWrapper(props: { children: any }) {
   return <Fragment>{props.children}</Fragment>;

@@ -1,5 +1,3 @@
-import { YAMLMap } from "js-yaml";
-
 export interface Config {
   configVersion: string;
   name: string;
@@ -52,6 +50,6 @@ export interface Config {
 
 // Parse the YAML content and convert it to the defined type
 declare module "*.yml" {
-  const content: YAMLMap & Config;
+  const content: any;
   export default content;
 }
