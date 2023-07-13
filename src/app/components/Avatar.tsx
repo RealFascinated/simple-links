@@ -53,7 +53,7 @@ function LanyardComponent(props: { discord: any }) {
     <div>
       {hasLanyard && (
         <div
-          className={`absolute bottom-2 right-2 w-4 h-4 rounded-full transition ${currentStatus}`}
+          className={`absolute bottom-2 right-2 w-5 h-5 rounded-full transition ${currentStatus}`}
         />
       )}
     </div>
