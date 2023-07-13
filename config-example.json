@@ -1,0 +1,73 @@
+{
+  "configVersion": "0.1.4",
+  "name": "Your Name",
+  "description": "A description about yourself",
+  "avatar": "/avatar.webp",
+  "background": {
+    "showBackground": true,
+    "blur": true,
+    "darken": {
+      "enabled": true,
+      "amount": 0.7
+    },
+    "backgroundImage": "/background.jpg"
+  },
+  "theme": "dark",
+  "infoCard": {
+    "transparency": 0.85
+  },
+  "discord": {
+    "id": "set me"
+  },
+  "options": {
+    "showSourceLink": true
+  },
+  "metadata": {
+    "title": "Your Name",
+    "description": "website description",
+    "themeColor": "#6441a5",
+    "authors": [
+      {
+        "name": "Fascinated",
+        "url": "https://fascinated.cc"
+      }
+    ]
+  },
+  "links": [
+    {
+      "title": "Git",
+      "url": "https://git.fascinated.cc",
+      "icon": "fab fa-git-alt",
+      "color": {
+        "normal": "bg-green-700"
+      }
+    },
+    {
+      "title": "Twitch",
+      "url": "https://twitch.tv/fascinated_",
+      "icon": "fab fa-twitch",
+      "color": "bg-[#6441a5]"
+    },
+    {
+      "title": "Documentation",
+      "url": "https://docs.fascinated.cc",
+      "color": "bg-neutral-700"
+    }
+  ],
+  "socialLinks": [
+    {
+      "icon": "fab fa-twitter",
+      "color": "#1DA1F2",
+      "url": "https://twitter.com"
+    },
+    {
+      "icon": "fab fa-reddit",
+      "color": "#FF4300",
+      "url": "https://www.reddit.com/user/ImFascinatedMC"
+    },
+    {
+      "icon": "fab fa-git-alt",
+      "url": "https://git.fascinated.cc"
+    }
+  ]
+}
