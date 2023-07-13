@@ -145,4 +145,4 @@ dist
 .pnp.*
 
 # Config
-config.json
+config.yml

@@ -1,0 +1,75 @@
+# The version of the config (DO NOT CHANGE)
+configVersion: "0.2.0"
+# Your name
+name: "Your Name"
+# The description shown in the info card
+description: "A description about yourself"
+# The avatar to show
+avatar: "/avatar.webp"
+# Background configuration
+background:
+  # Should we use a custom background?
+  showBackground: true
+  # Should we blur that background?
+  blur: true
+  # Should we darken that background? and by how much
+  darken:
+    enabled: true
+    amount: 0.7
+  # The image to show when the background is enabled
+  backgroundImage: "/background.jpg"
+# The theme to use (light or dark)
+theme: "dark"
+# The info card settings
+infoCard:
+  # How transparent should it be?
+  transparency: 0.85
+# Discord settings (Status indicator)
+discord:
+  # Your discord id
+  id: "set me"
+# Global settings for the site
+options:
+  # Should we show the "Website Source" button?
+  showSourceLink: true
+# Metadata for the website (controls embed settings and SEO info)
+# see: https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image
+metadata:
+  title: "Your Name"
+  description: "website description"
+  themeColor: "#6441a5"
+  authors:
+    - name: "Fascinated"
+      url: "https://fascinated.cc"
+# The links to show (buttons)
+links:
+  # The title of the button
+  - title: "Git"
+    # Where the button goes to
+    url: "https://git.fascinated.cc"
+    # The icon of the button
+    # see: https://fontawesome.com/search
+    icon: "fab fa-git-alt"
+    # The color of the button (TailwindCSS colors or hex color, see below for hex)
+    color: "bg-green-700"
+  - title: "Twitch"
+    url: "https://twitch.tv/fascinated_"
+    icon: "fab fa-twitch"
+    color: "bg-[#6441a5]"
+  - title: "Documentation"
+    url: "https://docs.fascinated.cc"
+    color: "bg-neutral-700"
+# The links to show (icons only, below buttons)
+socialLinks:
+  # The icon to use
+  # see: https://fontawesome.com/search
+  - icon: "fab fa-twitter"
+    # The color of the icon
+    color: "#1DA1F2"
+    # Where the icon goes to when clicked
+    url: "https://twitter.com"
+  - icon: "fab fa-reddit"
+    color: "#FF4300"
+    url: "https://www.reddit.com/user/ImFascinatedMC"
+  - icon: "fab fa-git-alt"
+    url: "https://git.fascinated.cc"

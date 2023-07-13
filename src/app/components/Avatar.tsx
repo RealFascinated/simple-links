@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { useLanyardWS } from "use-lanyard";
 
-import Config from "../../../config.json";
+import Config from "../../../config.yml";
 
 function LanyardWrapper(props: { children: any }) {
   return <Fragment>{props.children}</Fragment>;

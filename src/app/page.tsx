@@ -4,7 +4,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Config from "../../config.json";
+import Config from "../../config.yml";
 import Avatar from "./components/Avatar";
 
 library.add(fab, far, fas); // Loading in the icons from FontAwesome
