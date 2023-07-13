@@ -39,10 +39,10 @@ function LanyardComponent(props: { discord: any }) {
   const hasLanyard = lanyardData !== undefined;
 
   const statusColor = {
-    online: "bg-green-400",
-    offline: "bg-slate-400",
-    dnd: "bg-red-500",
-    idle: "bg-orange-400",
+    online: "bg-[#43B581]",
+    offline: "bg-[#747F8D]",
+    dnd: "bg-[#F04747]",
+    idle: "bg-[#FAA61A]",
   };
   const currentStatus =
     lanyardData !== undefined
