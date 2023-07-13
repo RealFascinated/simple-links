@@ -1,6 +1,6 @@
 # The version of the config (DO NOT CHANGE)
 configVersion: "0.2.0"
-# Your name
+# Your name to show in the info card
 name: "Your Name"
 # The description shown in the info card
 description: "A description about yourself"
