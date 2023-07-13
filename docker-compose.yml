@@ -13,5 +13,5 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./config.json:/usr/src/app/config.json:ro # The application config (Must be created before starting the service)
+      - ./config.yml:/usr/src/app/config.yml:ro # The application config (Must be created before starting the service)
       - ./public:/usr/src/app/public:rw # Used for public facing images (eg: avatar and background)
