@@ -29,6 +29,10 @@ Simple Links is a lightweight alternative to Linktree and others.
 3. Run `docker compose up -d`
 4. The application is now updated
 
+## Support
+
+If you need any help, you can contact me on my Discord server [here](https://discord.gg/yjj2U3ctEG) or open a issue!
+
 ## What if I don't want buttons or icon only links?
 
 Just simply remove it from the config and it will not show anymore
