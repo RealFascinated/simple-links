@@ -40,7 +40,7 @@ function LanyardComponent(props: { discord: any }) {
 
   const statusColor = {
     online: "bg-[#43B581]",
-    offline: "bg-[#747F8D]",
+    offline: "bg-transparent",
     dnd: "bg-[#F04747]",
     idle: "bg-[#FAA61A]",
   };
