@@ -70,10 +70,14 @@ export default function Home() {
           />
         )}
         <div
-          className={`${selectedTheme.infoCardColor} rounded-lg text-center shadow-lg`}
+          className={`${
+            infoCard.transparency != 0
+              ? `${selectedTheme.infoCardColor} shadow-lg rounded-lg`
+              : ``
+          } text-center`}
           style={{
             zIndex: 1,
-            opacity: infoCard.transparency,
+            opacity: infoCard.transparency != 0 ? infoCard.transparency : 1,
           }}
         >
           <div className="m-5">
