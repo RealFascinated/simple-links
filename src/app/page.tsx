@@ -113,6 +113,12 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded
                       ${selectedTheme.buttonTextColor} ${color} hover:brightness-75 transition gap-2`}
+                      style={{
+                        opacity:
+                          infoCard.transparency != 0
+                            ? infoCard.transparency
+                            : 0.8,
+                      }}
                     >
                       {link.icon && <FontAwesomeIcon icon={icons} />}
                       <p>{link.title}</p>
@@ -134,6 +140,12 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:brightness-75 transition"
+                      style={{
+                        opacity:
+                          infoCard.transparency != 0
+                            ? infoCard.transparency
+                            : 0.8,
+                      }}
                     >
                       {link.icon && (
                         <FontAwesomeIcon
