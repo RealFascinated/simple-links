@@ -1,7 +1,7 @@
 workDir=/usr/src/app
 
 baseUrl=https://git.fascinated.cc/Fascinated/simple-links/raw/branch/master/public/
-toDownload=("avatar.webp" "background.jpg")
+toDownload=("avatar.webp" "background.jpg" "favicon.ico")
 
 echo "Checking if files need to be downloaded"
 if [ -z "$(ls -A $workDir/public)" ]; then
