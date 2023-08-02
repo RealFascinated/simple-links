@@ -71,6 +71,8 @@ export default function Home() {
             }}
           />
         )}
+
+        {/* Info Card */}
         <div
           className={`${
             infoCard.transparency != 0
@@ -112,7 +114,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`flex flex-row items-center justify-center mt-4 px-4 w-60 py-2 rounded
-                      ${selectedTheme.buttonTextColor} ${color} hover:brightness-75 transition gap-2`}
+                      ${selectedTheme.buttonTextColor} ${color} hover:brightness-75 transition gap-2 shadow-lg`}
                       style={{
                         opacity:
                           infoCard.transparency != 0
@@ -139,7 +141,7 @@ export default function Home() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:brightness-75 transition"
+                      className="hover:brightness-75 transition shadow-lg"
                       style={{
                         opacity:
                           infoCard.transparency != 0
