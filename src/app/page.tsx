@@ -5,6 +5,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
 import Avatar from "./components/Avatar";
 
 const Config: Config = require("../../config.yml") as any;
@@ -168,13 +169,18 @@ export default function Home() {
           className={`absolute bottom-0 right-0 mb-5 mr-5 ${selectedTheme.footerTextColor}`}
         >
           {options.showSourceLink && (
-            <a
+            <Link
               href="https://git.fascinated.cc/Fascinated/simple-links"
               target="_blank"
               className="mt-5"
             >
-              Website Source
-            </a>
+              <Image
+                src="https://cdn.fascinated.cc/assets/simple-links/icon.png"
+                alt="Simple Links Icon"
+                width={32}
+                height={32}
+              />
+            </Link>
           )}
         </div>
       </main>
