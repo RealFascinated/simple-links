@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json separately to fully utilize Docker layer caching
 COPY package.json ./
 COPY pnpm-lock.yaml ./
-RUN pnpm install --production --silent && pnpm cache clean --force
+RUN pnpm install --production --silent
 
 # Opt out of Next.js telemetry
 RUN npx next telemetry disable
