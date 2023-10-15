@@ -1,4 +1,4 @@
-FROM fascinated/docker-images:node-latest
+FROM fascinated/docker-images:node-pnpm-latest
 
 ENV NODE_ENV=production
 WORKDIR /usr/src/app
