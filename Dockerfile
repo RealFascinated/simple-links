@@ -14,9 +14,6 @@ RUN npx next telemetry disable
 # Copy the rest of the files
 COPY . .
 
-# Remove development dependencies
-RUN pnpm prune --production
-
 # Environment Variables
 ENV NODE_ENV=production
 
