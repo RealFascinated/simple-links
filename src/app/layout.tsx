@@ -3,6 +3,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {ReactNode} from "react";
 
 const Config: Config = require("../../config.yml") as any;
 config.autoAddCss = false;
@@ -14,7 +15,7 @@ export const metadata = Config.metadata; // Site metadata from the config
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">

@@ -23,7 +23,7 @@ export default function Home() {
     options,
     description,
     theme,
-  } = Config; // All of the settings pulled from the config file
+  } = Config; // All the settings pulled from the config file
 
   // Theme colors to use when using the selected theme
   // all used colors are from TailwindCSS
@@ -54,32 +54,23 @@ export default function Home() {
   const selectedTheme = themeColors[theme] || themeColors.dark; // The theme to use (fallback of dark)
 
   return (
-    <>
+    <div className={"relative"}>
+      {/* Background Image */}
+      {background.showBackground && background.backgroundImage && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          alt="Background image"
+          src={background.backgroundImage}
+          className={`absolute z-0 object-cover w-full h-full ${background.blur && "blur-sm"} brightness-${background.darken.enabled && background.darken.amount / 2}`}
+        />
+      )}
+
       <main
         className={`flex flex-col items-center justify-center w-screen h-screen ${selectedTheme.backgroundColor} ${selectedTheme.textColor}`}
       >
-        {/* Background Image */}
-        {background.showBackground && background.backgroundImage && (
-          <Image
-            alt="Background image"
-            src={background.backgroundImage}
-            fill={true}
-            style={{
-              zIndex: 0,
-              filter: `${background.blur && "blur(4px)"} brightness(${
-                background.darken.enabled && background.darken.amount / 2
-              })`,
-            }}
-          />
-        )}
-
         {/* Info Card */}
         <div
-          className={`${
-            infoCard.transparency != 0
-              ? `${selectedTheme.infoCardColor} shadow-lg rounded-lg`
-              : ``
-          } text-center`}
+          className={`${infoCard.transparency != 0 && `${selectedTheme.infoCardColor} shadow-lg rounded-lg`} text-center`}
           style={{
             zIndex: 1,
             opacity: infoCard.transparency != 0 ? infoCard.transparency : 1,
@@ -184,6 +175,6 @@ export default function Home() {
           )}
         </div>
       </main>
-    </>
+    </div>
   );
 }
