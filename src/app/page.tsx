@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Avatar from "./components/Avatar";
 
-const Config: Config = require("../../config.yml") as any;
+const config: Config = require("../../config.yml") as any;
 
 library.add(fab, far, fas); // Loading in the icons from FontAwesome
 
@@ -23,7 +23,7 @@ export default function Home() {
     options,
     description,
     theme,
-  } = Config; // All the settings pulled from the config file
+  } = config; // All the settings pulled from the config file
 
   // Theme colors to use when using the selected theme
   // all used colors are from TailwindCSS

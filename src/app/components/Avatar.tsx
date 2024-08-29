@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { useLanyardWS } from "use-lanyard";
 
-const Config: Config = require("../../../config.yml") as any;
+const config: Config = require("../../../config.yml") as any;
 
 function LanyardWrapper(props: { children: any }) {
   return <Fragment>{props.children}</Fragment>;
@@ -13,7 +13,7 @@ function LanyardWrapper(props: { children: any }) {
 
 export default function Avatar(props: any) {
   const { avatar } = props;
-  const { discord }: any = Config;
+  const { discord }: any = config;
 
   return (
     <div className="relative inline-block">
